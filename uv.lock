@@ -1,0 +1,47 @@
+version = 1
+revision = 3
+requires-python = ">=3.10"
+
+[[package]]
+name = "pylinbus"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "pyvxlapi" },
+    { name = "toomoss-py" },
+    { name = "udsoncan" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "pyvxlapi", specifier = ">=0.1.2" },
+    { name = "toomoss-py", specifier = ">=0.1.2" },
+    { name = "udsoncan", specifier = ">=1.26.1" },
+]
+
+[[package]]
+name = "pyvxlapi"
+version = "0.1.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b5/8b/07ca3a5a798065fcd3ee33ecbc7a5f2037a1edd895be1cf76b95b3216352/pyvxlapi-0.1.2.tar.gz", hash = "sha256:b7f6cb1354ecc5fe3db1b2c93a569599274ac48f17f40b432be667cbb3efd870", size = 58057, upload-time = "2025-11-10T03:10:34.409Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/48/2d/db968c1d586fbb6a436eb34a4a8747b0d525a869a7a135e91e68fa57342b/pyvxlapi-0.1.2-py3-none-any.whl", hash = "sha256:b826fa7d427c8437f19afbe4116b07b60e6eff8145dc8e448f45091e677d95c0", size = 58942, upload-time = "2025-11-10T03:10:32.709Z" },
+]
+
+[[package]]
+name = "toomoss-py"
+version = "0.1.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/2c/18/155fa1f494ccbef4edf1f678fcfea96f963a5333367f08ead7f9a96f7655/toomoss_py-0.1.2.tar.gz", hash = "sha256:7557e1153f25be5fd2de194d2035d135c27e8a7d66bc5f8fe7f5b9f672514cb8", size = 7629216, upload-time = "2025-09-29T09:53:41.053Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5e/3a/02c1659d95f2e0e7233d9c4273099c24e2ebed4780f00943debd4bab1c72/toomoss_py-0.1.2-py3-none-any.whl", hash = "sha256:219ea232d678c81f5bfdea043abc1c59332760315098be16da31d352cd338ce4", size = 7647814, upload-time = "2025-09-29T09:53:39.399Z" },
+]
+
+[[package]]
+name = "udsoncan"
+version = "1.26.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b1/8e/7d0a876681f1578711c96a2996b114fd77d4a5786a9f00f440bc8655269a/udsoncan-1.26.1.tar.gz", hash = "sha256:e4e04df9ad3be4f1dd6cc6dd580aa8a25cb842b3bb1b10c482d3cffa07303910", size = 95828, upload-time = "2026-06-25T20:43:14.023Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9b/99/5c79ce34af274fe20c4511ecf792ed2d868ad64a2406351f20df7f2b33fd/udsoncan-1.26.1-py3-none-any.whl", hash = "sha256:c1bd6cc54d6c1124c0eafeff2ffaab48bfeb7d0d2576959f21840c37e96dfb9a", size = 120636, upload-time = "2026-06-25T20:43:12.998Z" },
+]

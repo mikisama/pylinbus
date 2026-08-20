@@ -1,0 +1,18 @@
+[project]
+name = "pylinbus"
+version = "0.1.0"
+description = "Local Interconnect Network interface module for Python"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyvxlapi>=0.1.2",
+    "toomoss-py>=0.1.2",
+    "udsoncan>=1.26.1",
+]
+
+[project.scripts]
+pylinbus = "pylinbus:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
