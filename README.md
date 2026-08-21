@@ -60,7 +60,7 @@ with Client(conn, config=cfg) as client:
     print(response)
 ```
 
-## Related 
+## Related
 
 - [python-can](https://github.com/hardbyte/python-can) – for the inspiration.
 - [udsoncan](https://github.com/pylessard/python-udsoncan) – for providing a comprehensive UDS library.
