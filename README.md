@@ -1,19 +1,20 @@
 # pylinbus
 
-A Python package for **LIN bus** communication with transport-layer support
-and multiple hardware backends.
+LIN (Local Interconnect Network) interface module for Python with transport-layer support
+and multiple hardware backends. Inspire by [python-can](https://github.com/hardbyte/python-can)
 
 ## Features
 
-- **Abstract bus interface** — implement your own hardware driver by
+- **Abstract bus interface** - implement your own hardware driver by
   subclassing `LinBus`.
-- **LIN Transport Protocol** — ISO-TP-style segmentation and reassembly
+- **LIN Transport Protocol** - ISO-TP-style segmentation and reassembly
   (`LinTp`) over LIN diagnostic frames (0x3C / 0x3D).
-- **udsoncan connection adapter** — drop-in `LinTpConnection` for the
+- **udsoncan connection adapter** - drop-in `LinTpConnection` for the
   popular [udsoncan](https://github.com/pylessard/python-udsoncan) UDS library.
 - **Hardware backends**:
   - **Toomoss** USB-LIN adapters (`toomoss_py`)
   - **Vector** XL API (`pyvxlapi`, Windows)
+- **Master mode only** – Optimized for LIN Master operation (Slave support planned for future releases).
 
 ## Installation
 
@@ -58,6 +59,13 @@ with Client(conn, config=cfg) as client:
     response = client.change_session(1)
     print(response)
 ```
+
+## Related 
+
+- [python-can](https://github.com/hardbyte/python-can) – for the inspiration.
+- [udsoncan](https://github.com/pylessard/python-udsoncan) – for providing a comprehensive UDS library.
+- [pyvxlapi](https://github.com/mikisama/pyvxlapi) - Vector hardware backend
+- [toomoss-py](https://github.com/mikisama/toomoss_py) - Toomoss hardware backend
 
 ## License
 
