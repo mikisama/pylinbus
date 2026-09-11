@@ -112,14 +112,14 @@ class ToomossLin(LinBus):
         return None
 
     def set_bitrate(self, bitrate: int = 19200) -> None:
+        ret = LIN_EX_CtrlPowerOut(self.dev, self.channel, self.vbat_output)
+        if ret < 0:
+            raise RuntimeError("ToomossLIN: VBAT config failed!")
+
         self.bitrate = bitrate
         ret = LIN_EX_Init(self.dev, self.channel, bitrate, LIN_EX_MASTER)
         if ret < 0:
             raise RuntimeError("ToomossLIN: Init failed!")
-
-        ret = LIN_EX_CtrlPowerOut(self.dev, self.channel, self.vbat_output)
-        if ret < 0:
-            raise RuntimeError("ToomossLIN: VBAT config failed!")
 
     def shutdown(self) -> None:
         if self.is_shutdown:
