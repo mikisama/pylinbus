@@ -1,10 +1,10 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.10"
 
 [[package]]
 name = "pylinbus"
-version = "0.1.3"
+version = "0.1.4"
 source = { editable = "." }
 dependencies = [
     { name = "pyvxlapi" },
@@ -14,18 +14,18 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "pyvxlapi", specifier = ">=0.1.2" },
+    { name = "pyvxlapi", specifier = ">=0.1.3" },
     { name = "toomoss-py", specifier = ">=0.1.2" },
     { name = "udsoncan", specifier = ">=1.26.1" },
 ]
 
 [[package]]
 name = "pyvxlapi"
-version = "0.1.2"
+version = "0.1.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/b5/8b/07ca3a5a798065fcd3ee33ecbc7a5f2037a1edd895be1cf76b95b3216352/pyvxlapi-0.1.2.tar.gz", hash = "sha256:b7f6cb1354ecc5fe3db1b2c93a569599274ac48f17f40b432be667cbb3efd870", size = 58057, upload-time = "2025-11-10T03:10:34.409Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/30/91/b9c112dc7b3636e9c9855db3f70993d6dc4a1d690cb3aa1f0ec0883670cc/pyvxlapi-0.1.3.tar.gz", hash = "sha256:89f3883356e82635d3510b4bab6400a2f8db26ca5dbac5002ff6807706ead68a", size = 909431, upload-time = "2026-10-23T07:19:45.923Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/48/2d/db968c1d586fbb6a436eb34a4a8747b0d525a869a7a135e91e68fa57342b/pyvxlapi-0.1.2-py3-none-any.whl", hash = "sha256:b826fa7d427c8437f19afbe4116b07b60e6eff8145dc8e448f45091e677d95c0", size = 58942, upload-time = "2025-11-10T03:10:32.709Z" },
+    { url = "https://files.pythonhosted.org/packages/33/b2/3ee2158fe476ce814ce65cf6481c7edf73e1b470fdd72e2f2cfcce29729f/pyvxlapi-0.1.3-py3-none-any.whl", hash = "sha256:4d70b11fac82c4d71519063c99d3d28480c407022fd9c599465d94293747ceaa", size = 910490, upload-time = "2026-10-23T07:19:44.325Z" },
 ]
 
 [[package]]
