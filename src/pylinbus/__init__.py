@@ -12,10 +12,12 @@ Quick start
 >>> rx  = tp.recv(timeout=0.5)
 """
 
+from importlib.metadata import version
+
 from pylinbus.lin import LinBus
 from pylinbus.lintp import LinTp
 
-__version__ = "0.1.3"
+__version__ = version("pylinbus")
 
 __all__ = [
     "LinBus",
